@@ -1,15 +1,15 @@
 // CARTEL LA CIMA — pas de links aan in CONFIG voordat je publiceert.
 const CONFIG = {
   // Vervang dit door je echte invite, bijvoorbeeld https://discord.gg/jouwcode
-  discordUrl: "https://discord.gg/VERVANG-DIT",
+  discordUrl: "https://discord.gg/J8NvURpN7F",
   // Plak de YouTube-video-ID, bijvoorbeeld uit https://www.youtube.com/watch?v=VIDEO_ID
-  youtubeVideoId: ""
+  youtubeVideoId: "https://www.youtube.com/watch?v=KcJ9idXWCos"
 };
 
 document.querySelectorAll(".discord-link").forEach((link) => {
   link.href = CONFIG.discordUrl;
   link.addEventListener("click", (event) => {
-    if (!CONFIG.discordUrl || CONFIG.discordUrl.includes("VERVANG-DIT")) {
+    if (!CONFIG.discordUrl || CONFIG.discordUrl.includes("https://discord.gg/J8NvURpN7F")) {
       event.preventDefault();
       alert("Stel eerst je echte Discord-uitnodigingslink in bovenaan script.js (CONFIG.discordUrl).");
     }
