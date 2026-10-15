@@ -5,7 +5,7 @@ const CONFIG = {
 };
 
 /* Discord-links instellen op alle pagina's */
-document.querySelectorAll(".discord-link").forEach((link) => {
+document.querySelectorAll("https://discord.gg/J8NvURpN7F").forEach((link) => {
   link.href = CONFIG.discordUrl;
 });
 
